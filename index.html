@@ -21,16 +21,16 @@
             <a class="link-text" href='https://unmei-ongaku.fanlink.to/out-world' target="_blank">Latest Release</a>
         </div>
         <div class="link-container">
-            <img class="link-logo-sm inverted" src="public/assets/github.png">
+            <img class="link-logo-sm filter invert" src="public/assets/github.png">
             <a class="link-text" href='https://github.com/norinorin' target="_blank">GitHub</a>
         </div>
         <div class="link-container">
-            <img class="link-logo-sm inverted" src="public/assets/spotify.png">
+            <img class="link-logo-sm filter invert" src="public/assets/spotify.png">
             <a class="link-text" href='https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM'
                 target="_blank">Spotify</a>
         </div>
         <div class="link-container">
-            <img class="link-logo-sm inverted" src="public/assets/soundcloud.png">
+            <img class="link-logo-sm filter invert" src="public/assets/soundcloud.png">
             <a class="link-text" href='https://soundcloud.com/norizontunes' target="_blank">Soundcloud</a>
         </div>
     </div>
@@ -38,9 +38,8 @@
     <script>
         document.querySelectorAll(".link-container").forEach(element => {
             for (const child of element.children) {
-                if (child.classList && child.classList.contains("inverted")) {
-                    element.onmouseover = () => child.style.filter = "invert(0)";
-                    element.onmouseout = () => child.style.filter = "invert(100%)";
+                if (child.classList && child.classList.contains("invert")) {
+                    element.onmouseover = element.onmouseout = () => child.classList.toggle("invert");;
                 }
             }
         })

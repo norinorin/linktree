@@ -15,11 +15,11 @@
         @apply border-solid border-2 cursor-pointer;
         @apply grid grid-rows-1;
         @apply hover:bg-white hover:text-black;
-        transition: background-color 0.5s ease-in;
+        transition: background-color 0.5s ease;
     }
 
     .link-container:hover {
-        mix-blend-mode: screen;
+        @apply mix-blend-screen;
     }
 
     .link-text {
@@ -32,10 +32,6 @@
 
     .link-logo-sm {
         @apply w-8 mt-2 ml-2;
-    }
-
-    .inverted {
-        filter: invert(1);
     }
 
     #links {
