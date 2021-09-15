@@ -24,22 +24,21 @@
     </div>
     <div class="text-center py-2">Norizon</div>
     <div id="links">
-        <div class="link-container">
+        <div class="link-container" onclick="newTab('https://unmei-ongaku.fanlink.to/out-world')">
             <img class="link-logo" src="public/assets/latest.png">
-            <a class="link-text" href='https://unmei-ongaku.fanlink.to/out-world' target="_blank">Latest Release</a>
+            <span class="link-text">Latest Release</span>
         </div>
-        <div class="link-container">
+        <div class="link-container" onclick="newTab('https://github.com/norinorin')">
             <img class="link-logo-sm filter invert" src="public/assets/github.png">
-            <a class="link-text" href='https://github.com/norinorin' target="_blank">GitHub</a>
+            <span class="link-text">GitHub</span>
         </div>
-        <div class="link-container">
+        <div class="link-container" onclick="newTab('https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM')">
             <img class="link-logo-sm filter invert" src="public/assets/spotify.png">
-            <a class="link-text" href='https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM'
-                target="_blank">Spotify</a>
+            <span class="link-text">Spotify</span>
         </div>
-        <div class="link-container">
+        <div class="link-container" onclick="newTab('https://soundcloud.com/norizontunes')">
             <img class="link-logo-sm filter invert" src="public/assets/soundcloud.png">
-            <a class="link-text" href='https://soundcloud.com/norizontunes' target="_blank">Soundcloud</a>
+            <span class="link-text">Soundcloud</span>
         </div>
     </div>
 
@@ -47,10 +46,14 @@
         document.querySelectorAll(".link-container").forEach(element => {
             for (const child of element.children) {
                 if (child.classList && child.classList.contains("invert")) {
-                    element.onmouseover = element.onmouseout = () => child.classList.toggle("invert");;
+                    element.onmouseover = element.onmouseout = () => child.classList.toggle("invert");
                 }
             }
-        })
+        });
+
+        function newTab(url) {
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 
