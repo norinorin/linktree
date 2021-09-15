@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Yrsa'>
+    <title>Norizon | Links</title>
+</head>
+
+<body>
+    <div class="pt-12 pb-2">
+        <img class="lg:w-32 md:w-1/6 w-1/4 mx-auto rounded-full"
+            src="https://avatars.githubusercontent.com/u/69400842?u=adb83d4abeef51313b6e39de68904c7c2fb7d80c">
+    </div>
+    <div class="text-center py-2">Norizon</div>
+    <div id="links">
+        <div class="link-container">
+            <img class="link-logo" src="public/assets/latest.png">
+            <a class="link-text" href='https://unmei-ongaku.fanlink.to/out-world' target="_blank">Latest Release</a>
+        </div>
+        <div class="link-container">
+            <img class="link-logo-sm inverted" src="public/assets/github.png">
+            <a class="link-text" href='https://github.com/norinorin' target="_blank">GitHub</a>
+        </div>
+        <div class="link-container">
+            <img class="link-logo-sm inverted" src="public/assets/spotify.png">
+            <a class="link-text" href='https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM'
+                target="_blank">Spotify</a>
+        </div>
+        <div class="link-container">
+            <img class="link-logo-sm inverted" src="public/assets/soundcloud.png">
+            <a class="link-text" href='https://soundcloud.com/norizontunes' target="_blank">Soundcloud</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".link-container").forEach(element => {
+            for (const child of element.children) {
+                if (child.classList && child.classList.contains("inverted")) {
+                    element.onmouseover = () => child.style.filter = "invert(0)";
+                    element.onmouseout = () => child.style.filter = "invert(100%)";
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

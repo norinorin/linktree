@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400%;
+        @apply text-white text-lg bg-fixed bg-no-repeat animate-gradient-shift;
+        font-family: "Yrsa";
+    }
+
+    .link-container {
+        @apply mx-auto md:w-7/12 w-3/4 h-14 my-3;
+        @apply border-solid border-2 cursor-pointer;
+        @apply grid grid-rows-1;
+        @apply hover:bg-white hover:text-black;
+        transition: background-color 0.5s ease-in;
+    }
+
+    .link-container:hover {
+        mix-blend-mode: screen;
+    }
+
+    .link-text {
+        @apply mb-3;
+    }
+
+    .link-logo {
+        @apply w-10 mt-1.5 ml-1.5;
+    }
+
+    .link-logo-sm {
+        @apply w-8 mt-2 ml-2;
+    }
+
+    .inverted {
+        filter: invert(1);
+    }
+
+    #links {
+        @apply block align-middle text-center py-2;
+    }
+}
