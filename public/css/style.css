@@ -559,6 +559,8 @@ body {
           animation: gradient-shift 5s ease alternate infinite;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -566,10 +568,34 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 9999px;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 16.666667%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .avatar {
+    width: 8rem;
+  }
+}
+
+.title {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+
 .link-container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   height: 3.5rem;
   width: 75%;
@@ -600,6 +626,10 @@ body {
   transition: background-color 0.5s ease;
 }
 
+.link-container:last-child {
+  margin-bottom: 0px;
+}
+
 .link-container:hover {
   mix-blend-mode: screen;
 }
@@ -628,17 +658,8 @@ body {
   vertical-align: middle;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .table {
   display: table;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 @-webkit-keyframes spin {
@@ -727,27 +748,6 @@ body {
   }
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
 *, ::before, ::after {
   --tw-shadow: 0 0 #0000;
 }
@@ -782,15 +782,9 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:w-1\/6 {
-    width: 16.666667%;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-32 {
-    width: 8rem;
-  }
 }
 
 @media (min-width: 1280px) {
