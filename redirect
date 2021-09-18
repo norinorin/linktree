@@ -1,0 +1,24 @@
+#!/bin/sh
+# usage: redirect route url
+mkdir -p releases
+cd releases
+mkdir $1
+cd $1
+cat <<EOF >> index.html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=$2">
+    <script>window.location.href = "$2"</script>
+    <title>Redirecting...</title>
+</head>
+
+<body>
+    Follow this <a href="$2">link</a>
+</body>
+
+</html>
+EOF
