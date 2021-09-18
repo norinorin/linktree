@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
@@ -34,22 +34,22 @@
     <img class="avatar" src="public/assets/ava.png">
     <div class="title">Norizon</div>
     <div id="links">
-        <span class="link-container" onclick="location.href='/releases/out-world'">
-            <img class="link-logo" src="public/assets/latest-min.png">
-            <span class="link-text">Latest Release</span>
-        </span>
-        <span class="link-container" onclick="newTab('https://github.com/norinorin')">
-            <img class="link-logo-sm filter invert" src="public/assets/github.png">
+        <a class="link-container" href="/releases/out-world">
+            <img class=" link-logo" src="public/assets/latest-min.png">
+            <span class="">Latest Release</span>
+        </a>
+        <a class="link-container" href="https://github.com/norinorin" target="_blank">
+            <img class="link-logo filter invert" src="public/assets/github.png">
             <span class="link-text">GitHub</span>
-        </span>
-        <span class="link-container" onclick="newTab('https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM')">
-            <img class="link-logo-sm filter invert" src="public/assets/spotify.png">
+        </a>
+        <a class="link-container" href="https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM" target="_blank">
+            <img class="link-logo filter invert" src="public/assets/spotify.png">
             <span class="link-text">Spotify</span>
-        </span>
-        <span class="link-container" onclick="newTab('https://soundcloud.com/norizontunes')">
-            <img class="link-logo-sm filter invert" src="public/assets/soundcloud.png">
+        </a>
+        <a class="link-container" href="https://soundcloud.com/norizontunes" target="_blank">
+            <img class="link-logo filter invert" src="public/assets/soundcloud.png">
             <span class="link-text">SoundCloud</span>
-        </span>
+        </a>
     </div>
 
     <script>
@@ -60,10 +60,6 @@
                 }
             }
         });
-
-        function newTab(url) {
-            window.open(url, '_blank');
-        }
     </script>
 </body>
 

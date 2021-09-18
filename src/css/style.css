@@ -19,9 +19,9 @@
     }
 
     .link-container {
-        @apply mx-auto md:w-7/12 w-3/4 h-14 mb-3;
+        @apply md:w-1/2 w-3/4 h-14 mb-3 overflow-hidden;
+        @apply flex justify-center items-center relative;
         @apply border-solid border-2 cursor-pointer;
-        @apply grid grid-rows-1;
         @apply hover:bg-white hover:text-black;
         transition: background-color 0.5s ease;
     }
@@ -34,19 +34,11 @@
         @apply mix-blend-screen;
     }
 
-    .link-text {
-        @apply mb-3;
-    }
-
     .link-logo {
-        @apply w-10 mt-1.5 ml-1.5;
-    }
-
-    .link-logo-sm {
-        @apply w-8 mt-2 ml-2;
+        @apply absolute w-8 left-2 rounded-full;
     }
 
     #links {
-        @apply block align-middle text-center py-2;
+        @apply flex flex-wrap flex-col relative justify-center items-center;
     }
 }
