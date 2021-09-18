@@ -35,7 +35,8 @@
     }
 
     .link-logo {
-        @apply absolute w-8 left-2 rounded-full;
+        @apply absolute block w-auto h-8 left-2 object-contain rounded-full;
+        object-position: initial;
     }
 
     #links {
