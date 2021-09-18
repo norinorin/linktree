@@ -1,0 +1,8 @@
+#!/bin/bash
+cd public/assets
+mkdir -p thumbnails
+for file in ./*; do
+    if [ -f "$file" ]; then
+        convert $file -resize 32x32 "thumbnails/${file%.*}32px.${file##*.}"
+    fi
+done
