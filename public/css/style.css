@@ -563,8 +563,8 @@ body {
   background-repeat: no-repeat;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   font-family: "Karla", sans-serif;
@@ -579,13 +579,13 @@ body {
 
 @media (min-width: 768px) {
   .avatar {
-    width: 16.666667%;
+    width: 5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .avatar {
-    width: 8rem;
+    width: 6rem;
   }
 }
 
@@ -597,14 +597,14 @@ body {
 
 .link-container {
   margin-bottom: 0.75rem;
-  height: 3.5rem;
-  width: 75%;
+  height: 4rem;
+  width: 91.666667%;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .link-container {
-    width: 50%;
+    width: 33.333333%;
   }
 }
 
