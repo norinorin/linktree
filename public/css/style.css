@@ -579,13 +579,13 @@ body {
 
 @media (min-width: 768px) {
   .avatar {
-    width: 5rem;
+    width: 6rem;
   }
 }
 
 @media (min-width: 1024px) {
   .avatar {
-    width: 6rem;
+    width: 7rem;
   }
 }
 
@@ -602,7 +602,13 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
+  .link-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1536px) {
   .link-container {
     width: 33.333333%;
   }
