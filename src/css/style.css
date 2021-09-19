@@ -6,6 +6,7 @@
     body {
         background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
         background-size: 400%;
+        color: white; /* fallback color */
         @apply text-white text-lg py-10 bg-fixed bg-no-repeat animate-gradient-shift;
         font-family: "Karla", sans-serif;
     }
@@ -21,8 +22,7 @@
     .link-container {
         @apply md:w-1/2 w-3/4 h-14 mb-3 overflow-hidden;
         @apply flex justify-center items-center relative;
-        @apply border-solid border-2 cursor-pointer;
-        @apply hover:bg-white hover:text-black;
+        @apply border-solid border-2 cursor-pointer; 
         transition: background-color 0.5s ease;
     }
 
@@ -32,6 +32,13 @@
 
     .link-container:hover {
         @apply mix-blend-screen;
+        background-color: white; /* fallback color */
+        color: black; /* fallback color */
+        @apply bg-white text-black;
+    }
+
+    .link-container:hover .hover-uninvert {
+        @apply invert-0;
     }
 
     .link-logo {
@@ -41,5 +48,9 @@
 
     #links {
         @apply flex flex-wrap flex-col relative justify-center items-center;
+    }
+
+    .hover-uninvert {
+        @apply filter invert;
     }
 }
