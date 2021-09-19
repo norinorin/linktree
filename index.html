@@ -35,8 +35,8 @@
     <div class="title">Norizon</div>
     <div id="links">
         <a class="link-container" href="/releases/out-world" target="_blank">
-            <img class=" link-logo" src="public/assets/thumbnails/latest32px.png">
-            <span class="">Latest Release</span>
+            <img class="link-logo" src="public/assets/thumbnails/latest32px.png">
+            <span class="link-text">Latest Release</span>
         </a>
         <a class="link-container" href="https://github.com/norinorin" target="_blank">
             <img class="link-logo filter invert" src="public/assets/thumbnails/github32px.png">
@@ -54,11 +54,18 @@
 
     <script>
         document.querySelectorAll(".link-container").forEach(element => {
+            let label;
             for (const child of element.children) {
-                if (child.classList && child.classList.contains("invert")) {
-                    element.onmouseover = element.onmouseout = () => child.classList.toggle("invert");
+                if (child.classList) {
+                    if (child.classList.contains("invert"))
+                        element.onmouseover = element.onmouseout = () => child.classList.toggle("invert");
+                    else if (child.classList.contains("link-text"))
+                        label = child.innerHTML;
                 }
             }
+
+            if (label)
+                element.onclick = () => gtag('event', 'click', { 'event_category': 'button', 'event_label': label });
         });
     </script>
 </body>
