@@ -26,10 +26,6 @@
         transition: background-color 0.5s ease;
     }
 
-    .link-container:last-child {
-        @apply mb-0;
-    }
-
     .link-container:hover {
         @apply mix-blend-screen;
         background-color: white; /* fallback color */

@@ -625,10 +625,6 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.link-container:last-child {
-  margin-bottom: 0px;
-}
-
 .link-container:hover {
   mix-blend-mode: screen;
   background-color: white;
