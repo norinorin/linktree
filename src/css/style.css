@@ -37,6 +37,10 @@
         @apply invert-0;
     }
 
+    .link-container:hover .hover-invert {
+        @apply invert;
+    }
+
     .link-logo {
         @apply absolute block w-auto h-8 left-3 object-contain rounded-full;
         object-position: initial;
@@ -48,5 +52,9 @@
 
     .hover-uninvert {
         @apply filter invert;
+    }
+
+    .hover-invert {
+        @apply filter invert-0;
     }
 }
