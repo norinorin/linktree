@@ -431,7 +431,8 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -658,11 +659,8 @@ body {
      object-position: initial;
 }
 
-#links {
-  position: relative;
+#links ul li {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }

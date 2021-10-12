@@ -46,8 +46,8 @@
         object-position: initial;
     }
 
-    #links {
-        @apply flex flex-wrap flex-col relative justify-center items-center;
+    #links ul li {
+        @apply flex justify-center items-center;
     }
 
     .hover-uninvert {
