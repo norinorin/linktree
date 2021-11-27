@@ -1,0 +1,40 @@
+[[links]]
+label = "Latest Release"
+icon = "latest.png"
+target = "/releases/out-world"
+
+[[links]]
+label = "Buy Me a Coffee"
+icon = "ko-fi.png"
+target = "https://ko-fi.com/norizon"
+class = "hover-invert"
+
+[[links]]
+label = "GitHub"
+icon = "github.png"
+target = "https://github.com/norinorin"
+class = "hover-uninvert"
+
+[[links]]
+label = "Spotify"
+icon = "spotify.png"
+target = "https://open.spotify.com/artist/3HCMHW2drI3phTu5Qh8cAM"
+class = "hover-uninvert"
+
+[[links]]
+label = "SoundCloud"
+icon = "soundcloud.png"
+target = "https://soundcloud.com/norizontunes"
+class = "hover-uninvert"
+
+[[links]]
+label = "Osu!"
+icon = "osu.png"
+target = "https://osu.ppy.sh/u/18414534"
+class = "hover-uninvert"
+
+[[links]]
+label = "Discord"
+icon = "discord.png"
+target = "https://discord.com/users/265080794911866881"
+class = "hover-uninvert"
