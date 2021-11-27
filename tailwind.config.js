@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
-    enabled: true,
-    content: ['*.html'],
+    content: ["./templates/**/*.html"],
+    safelist: ["hover-invert", "hover-uninvert"]
   },
   darkMode: false, // or 'media' or 'class'
   theme: {

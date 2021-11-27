@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <title>{{ section.title }}</title>
+    <meta name="title" content="{{ section.title }}">
+    <meta name="theme-color" content="{{ section.extra.color }}">
+    <meta property="og:site_name" content="Norizon">
+    <meta property="og:title" content="{{ section.title }}">
+    <meta property="og:image" content="{{ section.extra.avatar_path }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KS4SCGLCR5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KS4SCGLCR5');
+    </script>
+</head>
+
+<body>
+    <img class="avatar" src="{{ section.extra.avatar_path }}">
+    <div class="title">Norizon</div>
+    <div id="links" role="navigation">
+        <ul>
+            {{ section.content | safe }}
+        </ul>
+    </div>
+
+    <script>
+        document.querySelectorAll(".link-container").forEach(element => {
+            for (const child of element.children) {
+                if (child.id === "label")
+                    element.onclick = () => gtag('event', 'click', { event_category: 'button', event_label: child.innerHTML });
+            }
+        });
+    </script>
+</body>
+
+</html>
