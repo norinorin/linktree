@@ -14,7 +14,7 @@
     <meta name="theme-color" content="{{ section.extra.color }}">
     <meta property="og:site_name" content="Norizon">
     <meta property="og:title" content="{{ section.title }}">
-    <meta property="og:image" content="{{ section.extra.avatar_path }}">
+    <meta property="og:image" content="https://{{ config.base_url | safe }}{{ section.extra.avatar_path | safe }}">
     <meta name="twitter:card" content="summary_large_image">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KS4SCGLCR5"></script>
     <script>
