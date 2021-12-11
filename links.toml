@@ -28,7 +28,7 @@ target = "https://soundcloud.com/norizontunes"
 class = "hover-uninvert"
 
 [[links]]
-label = "Osu!"
+label = "osu!"
 icon = "osu.png"
 target = "https://osu.ppy.sh/u/18414534"
 class = "hover-uninvert"
