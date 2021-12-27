@@ -3,8 +3,8 @@
 
 <li>
     <a class="link-container" href="{{ link.target }}" target="_blank">
-        <img class="link-logo {% if link.class %}{{ link.class }}{% endif %}"
-            src="public/assets/thumbnails/{{ link.icon }}">
+        <img class="link-logo{% if link.class %} {{ link.class }}{% endif %}"
+            src="public/assets/thumbnails/{{ link.icon }}" alt="{{ link.label }} icon">
         <span id="label">{{ link.label }}</span>
     </a>
 </li>
