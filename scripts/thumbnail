@@ -2,7 +2,7 @@
 cd static/public/assets
 mkdir -p thumbnails
 for file in ./*; do
-    if [ -f "$file" ]; then
-        convert $file -resize 128x128 "thumbnails/${file%.*}.${file##*.}"
+    if [ -f "$file" ] && [ ! -f "thumbnails/$file" ]; then
+        convert $file -resize 128x128 "thumbnails/$file"
     fi
 done
