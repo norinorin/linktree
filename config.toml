@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://norizon.xyz"
+base_url = "https://norichi.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
