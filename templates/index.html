@@ -14,7 +14,7 @@
     {% if section.description %}
     <meta name="description" content="{{ section.description }}">{% endif %}
     <meta name="theme-color" content="{{ config.extra.color }}">
-    <meta property="og:site_name" content="Norizon">
+    <meta property="og:site_name" content="{{config.extra.title}}">
     <meta property="og:title" content="{{ section.title }}">
     <meta property="og:image" content="{{ config.base_url | safe }}{{ section.extra.avatar_path | safe }}">
     <meta name="twitter:card" content="summary_large_image">
@@ -31,9 +31,9 @@
 <body>
     <div id="avatar-container" class="avatar-container">
         <div id="avatar-placeholder" class="avatar-placeholder" style="background-color: {{config.extra.color}};"></div>
-        <img class="avatar" id="avatar" src="{{ section.extra.avatar_path }}" alt="Norizon">
+        <img class="avatar" id="avatar" src="{{ section.extra.avatar_path }}" alt="{{config.extra.title}}">
     </div>
-    <div class="title">Norizon</div>
+    <div class="title">{{config.extra.title}}</div>
     <div id="links" role="navigation">
         <ul>
             {{ section.content | safe }}
