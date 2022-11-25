@@ -11,8 +11,17 @@
         font-family: "Karla", sans-serif;
     }
 
+    .avatar-container {
+        @apply lg:w-28 md:w-24 w-1/4 mx-auto rounded-full relative;
+    }
+
+    .avatar-placeholder {
+        @apply w-full h-0 rounded-full;
+        padding-bottom: 100%;
+    }
+
     .avatar {
-        @apply lg:w-28 md:w-24 w-1/4 mx-auto rounded-full;
+        @apply rounded-full absolute top-0 left-0;
     }
 
     .title {

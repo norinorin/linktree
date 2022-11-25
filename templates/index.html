@@ -29,7 +29,10 @@
 </head>
 
 <body>
-    <img class="avatar" src="{{ section.extra.avatar_path }}" alt="Norizon">
+    <div id="avatar-container" class="avatar-container">
+        <div id="avatar-placeholder" class="avatar-placeholder" style="background-color: {{config.extra.color}};"></div>
+        <img class="avatar" id="avatar" src="{{ section.extra.avatar_path }}" alt="Norizon">
+    </div>
     <div class="title">Norizon</div>
     <div id="links" role="navigation">
         <ul>

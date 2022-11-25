@@ -449,7 +449,8 @@ body {
   font-family: "Karla", sans-serif;
 }
 
-.avatar {
+.avatar-container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
@@ -457,15 +458,29 @@ body {
 }
 
 @media (min-width: 768px) {
-  .avatar {
+  .avatar-container {
     width: 6rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .avatar {
+  .avatar-container {
     width: 7rem;
   }
+}
+
+.avatar-placeholder {
+  height: 0px;
+  width: 100%;
+  border-radius: 9999px;
+  padding-bottom: 100%;
+}
+
+.avatar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 9999px;
 }
 
 .title {
