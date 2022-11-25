@@ -13,4 +13,4 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+color = "#362833"
